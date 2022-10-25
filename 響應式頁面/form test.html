@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta charset = "utf - 8">
+		<title>Form Test</title>
+		<style>
+			#button1 {font-size:30px; color:red}
+			#button2 {font-size:30px; color:green}
+			a:link {color:black}
+			a:visited {color:green}
+			a:hover {color:blue}
+			a:focus {color:red}
+			a:active {color:yellow}
+
+		</style>
+		<link rel = "stylesheet" href = "mystyle.css">
+	</head>
+	<body>
+		<div style = "margin:0px auto; width: 500px">
+		<form method = "post" action = "mailto:a69569@gmail.com">
+			
+			請輸入密碼：
+			<input type = "password" name = "USERpwd" size = "10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			看不到：<input type = "hidden" name = "U Can't See Me" value = "John Cena">
+			<fieldset>
+				<legend align = "center">基本資料 Profile</legend>
+				姓名：
+				<input type = "text" name = "UserName" size = "40" placeholder = "Enter your name here"><br>
+				Email：
+				<input type = "mail" name = "UserMail" size = "39" placeholder = "username@mailserver"><br>
+				性別：
+				<input type = "radio" name = "sex" value = "男">男
+				<input type = "radio" name = "sex" value = "女">女
+				<input type = "radio" name = "sex" value = "其他">其他&nbsp;&nbsp;<textarea cols = "21" rows = "1">請輸入性別</textarea>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend align = "center">其他 Others</legend>
+				興趣：
+				<input type = "checkbox" name = "interest[]" value = "sports">sports
+				<input type = "checkbox" name = "interest[]" value = "movie">watch movies
+				<input type = "checkbox" name = "interest[]" value = "video games">video games
+				<input type = "checkbox" name = "interest[]" value = "sleep">sleep
+				<br>
+				文字方塊：
+				<br>
+				<textarea cols = "45" rows = "5" placeholder = "☠請輸入文字☠"></textarea>
+				<br>
+				下拉式選單：
+				<select>
+					<option value = "走路">走路
+					<option value = "公車">公車
+					<option value = "捷運">捷運
+				</select>
+				<br>
+				上傳檔案：
+				<input type = "file" name = "uploadfile"><br>
+				搜尋：
+				<input type = "search"><br>
+				網址：
+				<input type = "url"><br>
+				電話：
+				<input type = "tel"><br>
+				日期/時間：
+				<input type = "datetime-local"><br>
+				數字：
+				<input type = "number" min = "-10" max = "10" step = "1"><br>
+				範圍：
+				<input type = "range" min = "0" max = "10" step = "1">從1到10<br>
+				顏色：
+				<input type = "color" ><br>
+				<input type = "submit"><br>
+				
+				<ul align = "center">網站連結<br>
+					<a href="https://www.yahoo.com" target="_blank">Yahoo!</a><br>
+					<a href="https://www.google.com" target="_blank">Google</a><br>
+					<a href="https://www.gogle.com" target="_blank">網址錯誤的Google</a>
+				</ul>
+			</fieldset>
+				<label>選擇你的職業：</label>
+				<select name = "job">
+					<optgroup label = "大標題">
+					<option>請選擇</option>
+					<option value = "job1">doctor
+					<option value = "job2">engineer
+					<option value = "job3">public servant
+				</select>
+			<p align = "center">
+				<input type = "submit" value = "submit" id = "button1">&nbsp; &nbsp; &nbsp; &nbsp;
+				<input type = "reset" value = "clear" id = "button2">
+			</p>
+	</body>
+</html>
